@@ -1,0 +1,244 @@
+<!--This is the doc type declaration that starts all HTML pages defining it as a HTML5 document-->
+<!DOCTYPE html>
+<!--The HTML element defines the root of the HTML document and is the container for all other elements except for the DOCtype tag-->
+<html lang="en">
+  <!--The head element contains metadata/information for the document. Can contain elements: title, style, base, link, meta, script, noscript-->
+  <head>
+    <!-- The base tag specifies the base URL and/or target for all relative URLs in a document. -->
+    <base href="https://www.heat.com/" target="_blank" />
+    <!-- Meta tags always go inside the head element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings. -->
+    <!-- charset attribute specifies the character encoding for the HTML document-->
+    <meta charset="UTF-8" />
+    <!--viewport sets the width to full-width, width=device-width sets the webpages width to the width of the device screen of the user and initial-scale=1.0 sets the initial zoom level of the webpage when it's loaded.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HTML Practice"> 
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Chyanne Robbins">
+    <!-- The tile tag defines a title in the browser toolbar, provides a title for the page when it is added to favorites, and displays a title for the page in search-engine results -->
+    <title>About Page</title>
+    <!-- The link tag is mainly used to link to external style sheets and to add favicon to websites -->
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <!--The body tag defines the document's body. It contains all the contents of an HTML document such as headings, paragraphs, images, hyperlinks, tables, list, etc.)-->
+  <body>
+    <!--A header element represents a container for introductory content or a set of navigational links-->
+    <header>
+       <!-- The nav tag defines a set of navigation links. -->
+    <nav>
+      <a href="/schedule">Schedule</a> |
+        <a href="/roster">Roster</a> |
+    </nav>
+<h1>This is the header of the page</h1>
+<p>I can add a logo here</p>
+    </header>
+    <hr>
+    <!--The a tag defines a hyperlink, which is used to link from one page to another.-->
+    <p>
+      This is a relative link to the
+      <a href="/schedule" alt="Miami HEAT Schedule Page">
+        Miami HEAT's schedule page
+      </a>
+      using the base link located in the head tag.
+    </p>
+    <!--The br tag inserts a single line break in a text and is good for writing addresses or poems. Not to be used to add space between paragraphs-->
+    <br />
+    <!--The address tag defines the contact information for the author/owner of a document or article-->
+    <address>Chyanne Robbins 832-696-4402 chyanne.robbins@heat.com</address>
+
+    <!--The area tag defines an area inside an image map (an image with clickable areas). These elements are always nested inside a <map> tag.-->
+
+    <!--The article tag specifies independent, self contained content that makes sense on its own. Ex: blog post, news story, forum post, etc.-->
+    <article>
+       <!--The abbreviation tag is used in acronyms-->
+      <h2><abbr title="Hyper Text Markup Language">HTML</abbr></h2>
+      <p>HTML is the standard markup language for creating web pages</p>
+    </article>
+    <article>
+      <h2><abbr title="Cascading Style Sheets">CSS</abbr></h2>
+      <p>
+        CSS is a language for specifying how documents are presented to users —
+        how they are styled, laid out, etc.
+      </p>
+    </article>
+    <article>
+      <h2><abbr title="Javascript">JS</abbr></h2>
+      <p>
+        JS is a text- based programming language used both on the client-side
+        and server-side that allows you to make web pages interactive
+      </p>
+    </article>
+    <!--The hr tag defines breaks in the content and is displayed with a horizontal line-->
+    <hr>
+    <h4>Chyanne is a Frontend Web Developer at the Miami HEAT and loves to code and learn.</h4>
+     <!--The aside tag defines content indirectly related to the surrounding content. The aside content is often placed as a sidebar in a document-->
+    <aside>
+      Front-end web development is the development of the graphical user
+      interface of a website, through the use of HTML, CSS, and JavaScript, so
+      that users can view and interact with that website
+    </aside>
+   <hr>
+    <!-- Inside a button tag you can put text and tags like <i>, <b>, <strong>, <br>, <img>, etc. that is not possible with a button created with the input element. Always specify the type attribute to tell browsers what type of button it is (button, submit (forms), reset) -->
+    <button type="button">Click Me!</button><br><br>
+    <button><img src="bam.jpg" alt="Adebayo"></button>
+    <br />
+    <br />
+    <!-- The table tag defines an HTML table. -->
+    <!-- An HTML table consists of one table element and one or more tr (table row), th (table header), and td (table cell) elements. -->
+    <!-- The col tag specifies column properties for each column within a colgroup element and is useful for styling entire columns -->
+    <!--The col group tag specifies a group or more columns in a table for formatting. This is useful for applying styles to entire columns of tables instead of repeating the styles for each cell, for each row-->
+    <table>
+    <colgroup>
+    <col span="2" style="background-color: red;">
+    <col style="background-color: orange;">
+    </col>
+    </colgroup>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>Terresa</th>
+        <td>30</th>
+        <td>Unemployed</th>
+      </tr>
+      <tr>
+        <td>David</th>
+        <td>65</th>
+        <td>Retired</th>
+      </tr>
+      <tr>
+        <td>Jasmine</th>
+        <td>19</th>
+        <td>Student</th>
+      </tr>
+    </table>
+    <br>
+    <hr>
+    <!--The data tag is used to add a machine  readable translation to a given content-->
+<ul>
+  <li><data value="21053">Cherry Tomato</data>
+    <ul>
+      <li>New list</li>
+    </ul>
+  </li>
+  <li><data value="21054">Beef Tomato</data></li>
+  <li><data value="21055">Snack Tomato</data></li>
+</ul>
+<hr>
+<!--The details tag specifies additional details that the user can open and close on demand. -->
+<!--The summary tag is used in conjuction with details tag to specify a visible heading for the details-->
+<details>
+<summary>Disney World</summary>
+<p>Come and enjoy the magic of Walt Disney World Resort in Orlando, FL.</p>
+</details>
+<br>
+
+<!--The div tag defines a division or a section in an HTML document and is used as a container for HTML elements- which is then styled with CSS or manipulated with JS-->
+<div class="myDiv">
+  <h2>This is a heading in a div element</h2>
+  <p>This is some text in a div element.</p>
+</div>
+
+<!--The em tag is used to define emphasized text and is typically displayed in italic-->
+<p>You <em>have</em> to hurry up!</p>
+
+<!--The <embed> tag defines a container for an external resource, such as a web page, a picture, a media player, or a plug-in application.-->
+<!--Modern browsers don’t support the embed tag so use <img> for images, <iframe> for HTML, <video>, and <audio> for displaying video or audio content.-->
+<!--The figure element is used for self contained content like illustrations, diagrams, photos, ect and a figcaption element to define a caption for the photo-->
+<figure>
+  <img src="bam.jpg" alt="bam" width="500" height="600">
+  <figcaption>Image 1 - Bam Adebayo</figcaption>
+</figure>
+
+<!--The form tag is used to create an HTML form for user input-->
+<!--The form tag can contain multiple elements: input, textarea, button, select, 
+  option, optgroup, fieldset, label, output-->
+  <!--The fieldset tag is used to group related elements in a form and draws a line around related elements.-->
+  <!--The legend tag is used to define a caption for the fieldset element-->
+<div>
+  <h3>This is a form</h3>
+
+  <form action="/" name="form name" target="_blank">
+  <fieldset>
+    <legend>Signup Form</legend><br>
+    <!-- The label tag defines labels fro several elements. Also must be equal to the id attribute of the the related element-->
+  <label for="fname">First name:</label> 
+  <!-- The input tag specifies an input field where the user can insert data -->
+  <!-- The input types: button, checkbox, color, date, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, search, submit, tel, text (default value), time, url, week -->
+  <!--The id is used to uniquely define an html element ; name is used to submit a form element to server-->
+  <input type="text" id="fname" name="fname" placeholder="Real Name"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" placeholder="Real Name"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" maxlength="20" required="required" minlength="11"><br><br>
+  <label for="password1">Password</label>
+  <input type="password" name="password1" id="password1"><br><br>
+  <input type="checkbox" name="age" value="18">
+  <label for="age">I am over 18 years old</label><br><br>
+  
+  <input type="submit" value="Submit">
+  </fieldset>
+  </form>
+</div>
+<hr>
+<!--The <img> tag is used to embed/link an image in an HTML page. It creates a holding space for the referenced image. -->
+<!-- There are two required attributes for image tags (src and alt) -->
+<!-- Also always specify the width and height of an image. -->
+      <img src="bam.jpg" alt="adebayo" style="width: 100px; height: 100px" />
+<hr>
+ <!-- The li tag defines a list item and is used inside ordered lists(<ol>), unordered lists (<ul>), and in menu lists (<menu>).-->
+  <p>This is an ordered list</p>
+  <ol start="50">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+  <!-- The select element is used to create a drop-down list. -->
+  <!-- The optgroup tag is used to group related options in a select element. -->
+  <!-- The option tag define the available options in the drop-down lis , optgroup, or datalist element. -->
+  <form action="/">
+    <label for="colors">Choose a color:</label>
+    <select name="colors" id="colors"> 
+      <!-- The id attribute is needed to associate the drop-down list with a label. -->
+      <optgroup label="Dark Colors">
+        <option value="blue">Blue</option>
+        <option value="green">Black</option>
+      </optgroup>
+    </select>
+      <input type="submit" value="Submit">
+  </form>
+  <!-- The s tag specifies text that is no longer correct, accurate or relevant. The text will be displayed with a line through it. -->
+  <p><s>This is a sentence using the s tag</s></p>
+  <hr>
+
+  <!-- The script tag is used to embed a client-side script (JavaScript). The script element either contains scripting statements, or it points to an external script file through the src attribute. Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.-->
+<p id="test"></p>
+<script>
+document.getElementById("test").innerHTML = "This is JavaScript!";
+</script> 
+<hr>
+<p>This is some normal text.</p>
+<p><small>This is some smaller text using the small tag.</small></p>
+<hr>
+<!-- The span tag is an inline container used to mark up a part of a text, or a part of a document. It is easily styled by CSS or manipulated with JavaScript using the class or id attribute.It is much like the div element but div is a block-level element and span is an inline element. -->
+<p>My mom has <span style="color:blue">blue</span> eyes.</p>
+<hr>
+<!-- The strong tag is used to define text with strong importance. The content inside is typically displayed in bold. Use the b tag to bold text without any importance -->
+<strong>This text is important!</strong>
+<!--The footer tag defines a footer for a document or section.-->
+<footer>
+  <p>A footer tag usually contains</p>
+ <!-- This is a unordered list -->
+  <ul>
+    <li>authorship information</li>
+     <li>copyright information</li> 
+      <li>contact information</li>
+      <li>sitemap</li>
+      <li>back to top links</li>
+      <li>related documents</li>
+  </ul>
+</footer>
+  </body>
+</html>
