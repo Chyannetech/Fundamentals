@@ -107,19 +107,55 @@ div.borderWidth3 {
     border-color: red green blue yellow;
 }
 
-div.borderWidth4 {
+div.borderSides {
     border-top-style: dotted;
     border-right-style: solid;
     border-bottom-style: double;
     border-left-style: groove;
 }
+div.borderRadius {
+   border: 5px pink solid;
+   border-radius: 10px
+}
 
-
-
-
-
-
-
+/* Margins */
+.margin{
+    border: 3px black solid;
+    margin: 50px;
+}
+.marginTop{
+    border: 3px blue solid;
+    margin-top: 50px;
+}
+.marginBottom{
+    border: 3px pink solid;
+    margin-bottom: 50px;
+}
+.marginLeft{
+    border: 3px teal solid;
+    margin-left: 50px;
+}
+.marginRight{
+    border: 3px rgb(186, 183, 17) solid;
+    margin-right: 50px;
+}
+.marginAll{
+    border: 3px rgb(168, 63, 175) solid;
+    margin: 50px 25px 80px 100px;
+}
+.marginAuto{
+    border: 3px rgb(0, 155, 211) solid;
+    width: 300px;
+    margin: auto;
+}
+.marginCollapseBottom{
+    border: 3px rgb(235, 12, 75) solid;
+    margin: 0 0 50px 0;
+}
+.marginCollapseTop{
+    border: 3px rgb(235, 12, 75) solid;
+    margin: 25px 0 0 0;
+}
 .lorem {
     line-height: 30px;
     text-transform: capitalize;
