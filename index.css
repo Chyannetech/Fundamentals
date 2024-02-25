@@ -198,7 +198,7 @@
 }
 .heightWidth{
     border: 2px black solid;
-    height: 50px;
+    height: 100px;
     width: 100%;
 }
 .widthNoMax{
@@ -211,14 +211,37 @@
     height: 100px;
     max-width: 800px;
 }
+/* Box Model */
+.boxModel{
+background-color: gray;
+border: 10px blue solid;
+padding: 50px;
+margin: 60px;
+}
 
+/* Outline */
+.outline {
+    border: 10px black solid; 
+    outline-style:dotted;
+    outline-color: rgb(127, 6, 121);
+    outline-width: 6px;
+}
+.outlineOffset {
+    border: 10px rgb(191, 80, 170) solid; 
+    outline: 3px black solid;
+    outline-offset: 15px;
+}
+/* Text */
 
-.lorem {
+.text {
+    color: rgb(107, 73, 11);
+    background-color: burlywood;
+    text-align: center;
     line-height: 30px;
     text-transform: capitalize;
     letter-spacing: 2px;
     word-spacing: 5px;
-    text-align: center;
+    
 }
 
 
