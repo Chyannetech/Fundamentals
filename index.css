@@ -7,113 +7,113 @@
 }
 
 /* Background colors */
-div.red {
+.red {
     background-color: red;
 }
-div.green {
+.green {
     background-color: green;
 }
-div.blue {
+.blue {
     background-color: blue;
 }
 
 /* Background colors using opacity */
-div.redO {
+.redO {
     background-color: red;
     opacity: 0.5;
 }
-div.greenO {
+.greenO {
     background-color: green;
     opacity: 0.5;
 }
-div.blueO {
+.blueO {
     background-color: blue;
     opacity: 0.5;
 }
 
 /* Background colors using RGBA opacity */
-div.redA {
+.redA {
     background-color: rgb(255, 0, 0, 0.5);
 }
-div.greenA {
+.greenA {
     background-color: rgb(0,255,0,0.5);
 
 }
-div.blueA {
+.blueA {
     background-color: rgb(0,0,255,0.5);
  
 }
 
 /* Background Image */
-div.bkgdImage1{
+.bkgdImage1{
     background-image: url(https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JhZGllbnR8ZW58MHx8MHx8fDA%3D);
     background-repeat: no-repeat; 
     background-size: cover;
 }
-div.bkgdImage2{
+.bkgdImage2{
     background-image: url(https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JhZGllbnR8ZW58MHx8MHx8fDA%3D);
     background-repeat: repeat-x;   
 }
 /* Using the shorthand property */
-div.bkgdImage3{
+.bkgdImage3{
     background: url(https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JhZGllbnR8ZW58MHx8MHx8fDA%3D) no-repeat center;
 }
 
 /* Background Borders */
-div.border1 {
+.border1 {
     border-style: dotted;
 }
-div.border2 {
+.border2 {
     border-style: dashed;
 }
-div.border3 {
+.border3 {
     border-style: solid;
 }
-div.border4 {
+.border4 {
     border-style: double;
 }
-div.border5 {
+.border5 {
     border-style: groove;
 }
-div.border6 {
+.border6 {
     border-style: ridge;
 }
-div.border7 {
+.border7 {
     border-style: inset;
 }
-div.border8 {
+.border8 {
     border-style: outset;
 }
-div.border9 {
+.border9 {
     border-style: none;
 }
-div.border10 {
+.border10 {
     border-style: hidden;
 }
 
 /* Border Width */
-div.borderWidth1 {
+.borderWidth1 {
     border-style: solid;
     border-width: 5px;
 }
-div.borderWidth2 {
+.borderWidth2 {
     border-style: solid;
     border-width: 5px 20px;
 }
 
-div.borderWidth3 {
+.borderWidth3 {
     border-style: solid;
     border-width: 25px 10px 4px 35px;
     border-color: red green blue yellow;
 }
 
-div.borderSides {
+.borderSides {
     border-top-style: dotted;
     border-right-style: solid;
     border-bottom-style: double;
     border-left-style: groove;
 }
-div.borderRadius {
+.borderRadius {
    border: 5px pink solid;
    border-radius: 10px
 }
@@ -156,6 +156,63 @@ div.borderRadius {
     border: 3px rgb(235, 12, 75) solid;
     margin: 25px 0 0 0;
 }
+/* Padding */
+.padding{
+    border: 3px black solid;
+    padding: 50px;
+}
+.paddingTop{
+    border: 3px rgb(12, 78, 21) solid;
+    padding-top: 50px;
+}
+.paddingRight{
+    border: 3px rgb(118, 206, 186) solid;
+    padding-right: 50px;
+}
+.paddingBottom{
+    border: 3px rgb(211, 144, 144) solid;
+    padding-bottom: 50px;
+}
+.paddingLeft{
+    border: 3px rgb(241, 244, 30) solid;
+    padding-left: 50px;
+}
+.width300{
+    background-color: yellow;
+    border: 2px black solid;
+    width: 300px;
+}
+.paddingNoBox{
+    background-color: yellow;
+    border: 3px rgb(241, 244, 30) solid;
+    border: 2px black solid;
+    width: 300px;
+    padding: 50px;
+}
+.paddingBox{
+    background-color: yellow;
+    border: 2px rgb(0, 0, 0) solid;
+    width: 300px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.heightWidth{
+    border: 2px black solid;
+    height: 50px;
+    width: 100%;
+}
+.widthNoMax{
+    border: 2px black solid;
+    height: 100px;
+    width: 800px;
+}
+.maxWidth{
+    border: 2px black solid;
+    height: 100px;
+    max-width: 800px;
+}
+
+
 .lorem {
     line-height: 30px;
     text-transform: capitalize;
