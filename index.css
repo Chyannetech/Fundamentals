@@ -232,17 +232,73 @@ margin: 60px;
     outline-offset: 15px;
 }
 /* Text */
-
 .text {
     color: rgb(107, 73, 11);
     background-color: burlywood;
     text-align: center;
-    line-height: 30px;
-    text-transform: capitalize;
-    letter-spacing: 2px;
     word-spacing: 5px;
-    
 }
-
-
-
+.textAlign {
+    color: rgb(107, 73, 11);
+    text-align: justify;
+ 
+}
+.textLast{
+    color: rgb(14, 43, 207);
+    text-align-last: right;
+}
+.textCenter{
+    color: rgb(14, 43, 207);
+    text-align-last: center;
+}
+.overline {
+text-decoration-line: overline;
+}
+.underline {
+    text-decoration-line: underline;
+}
+.lineThrough {
+    text-decoration-line: line-through;
+}
+.overUnder {
+    text-decoration-line: overline underline;
+}
+.textStyle {
+    text-decoration: underline pink wavy 5px;
+}
+.textStyleNone {
+    text-decoration: none;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.indent {
+    text-indent:50px;
+}
+.spacing{
+    letter-spacing:10px;
+}
+.negSpacing{
+    letter-spacing:-2px;
+}
+.wordSpacing{
+    word-spacing:10px;
+}
+.lineHeight{
+    line-height: 1.6;
+}
+.noWrap{
+    white-space: nowrap;
+}
+.shadow{
+    text-shadow: 2px 2px red;
+}
+.shadowBlur{
+    text-shadow: 2px 2px 5px red;
+}
